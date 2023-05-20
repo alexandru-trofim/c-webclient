@@ -10,13 +10,11 @@
 #include <netinet/in.h> /* struct sockaddr_in, struct sockaddr */
 #include <netdb.h>      /* struct hostent, gethostbyname */
 #include <arpa/inet.h>
+#include <netinet/tcp.h>
 
-using namespace std;
-
-
-
-#include "post_request.hpp"
-#include  "post_request_builder.hpp"
+#include "nlohmann/json.hpp"
+#include "request.hpp"
+#include  "request_builder.hpp"
 #include  "helpers.hpp"
 #include "client.hpp"
 

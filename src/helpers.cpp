@@ -162,7 +162,7 @@ char* Helpers::receive_from_server(int sockfd)
 
         if (bytes < 0){
             cout << "ERROR reading response from socket\n";
-            exit(1);
+            return NULL;
         }
 
         if (bytes == 0) {
@@ -194,7 +194,7 @@ char* Helpers::receive_from_server(int sockfd)
 
         if (bytes < 0) {
             cout << "ERROR reading response from socket\n";
-            exit(1);
+            return NULL;
         }
 
         if (bytes == 0) {
